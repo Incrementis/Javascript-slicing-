@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Slicing</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		'<option value="" disabled selected>' simulates a placeholder for the drop list
+		
+		In '<body>' the 'style="text-align:center;"' centers similar like the tag '<center>' which was
+		used in the previous mini-projects.
+		
+		In '<section>' the 'max-width:1215px; min-width:390px' is the responsive area. In there
+		some elements will adjust to the screen size. For a better use of responsive Web Design check: 
+		https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+		
+		'<img style="max-width:11%;' takes the max width percentage which the image will take in its
+		'div' tag, so it will respond to the screen size.
+		
+		===============================================================================================
+	-->
+	
+	
+	<body style="text-align:center;">
+	
+	
+		<section style="position:relative;
+						max-width:1215px; 
+						min-width:390px; 
+						margin-right:auto; 
+						margin-left:auto;">
+		
+		
+		
+			<!--CAKE-->
+			<div id="cake" style="position:relative; min-height:500px">	</div>
+			
+			
+			<!--DROPLIST-->
+			<span>
+			
+				<select class="droplist">
+					
+					
+					<option value="" disabled selected>Slice starting point</option>
+
+				
+				</select>
+			
+			</span>
+			
+			
+			<!--DROPLIST-->
+			<span>
+			
+				<select class="droplist">
+				
+					<option value="" disabled selected>Slice ending point</option>
+
+				
+				</select>
+			
+			</span>
+		
+			
+			
+			<br>
+			<br>
+			<!--PLATES-->
+			<div>
+				
+				<img style="max-width:11%;" alt="p0" src="Plate.png">
+				<img style="max-width:11%;" alt="p1" src="Plate.png">
+				<img style="max-width:11%;" alt="p2" src="Plate.png">
+				<img style="max-width:11%;" alt="p3" src="Plate.png">
+				
+				<img style="max-width:11%;" alt="p4" src="Plate.png">
+				<img style="max-width:11%;" alt="p5" src="Plate.png">
+				<img style="max-width:11%;" alt="p6" src="Plate.png">
+				<img style="max-width:11%;" alt="p7" src="Plate.png">
+				
+			</div>
+			
+			
+			<!--CAKE SLICES-->
+			<div id="slices" style="position:absolute; top:530px">
+				
+				<img id="s0" style="visibility:hidden; max-width:11%;" alt="sl0" src="Cake/C0.png">
+				<img id="s1" style="visibility:hidden; max-width:11%;" alt="sl1" src="Cake/C1.png">
+				<img id="s2" style="visibility:hidden; max-width:11%;" alt="sl2" src="Cake/C2.png">
+				<img id="s3" style="visibility:hidden; max-width:11%;" alt="sl3" src="Cake/C3.png">
+				
+				<img id="s4" style="visibility:hidden; max-width:11%;" alt="sl4" src="Cake/C4.png">
+				<img id="s5" style="visibility:hidden; max-width:11%;" alt="sl5" src="Cake/C5.png">
+				<img id="s6" style="visibility:hidden; max-width:11%;" alt="sl6" src="Cake/C6.png">
+				<img id="s7" style="visibility:hidden; max-width:11%;" alt="sl7" src="Cake/C7.png">
+				
+			</div>
+		
+			<br>
+			<br>
+			<button type="button" onclick="sliceIt()">SLICE</button>
+			
+			
+		</section>
+	
+		
+		<!--WIKI-->
+		<section>
+		
+			<hr width="50%">
+		
+			<br>
+			<br>
+			For more explanation please visit - 
+			<a href = "https://github.com/Incrementis/Javascript-slicing-/wiki"> 
+			Slicing Wiki</a>
+			
+		</section>
+
+		
+	</body>
+
+	
+	<script language = "javascript" type = "text/javascript" src = "slice.js"></script> 
+
+</html>
